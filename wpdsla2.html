@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Noise Smart Store</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f3f3f3;
+}
+
+header{
+background:black;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+nav{
+background:#222;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#00e1ff;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1518441902117-6d8d9a4f7b2c") center/cover;
+height:300px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:30px;
+font-weight:bold;
+}
+
+.section{
+padding:40px;
+text-align:center;
+}
+
+.products{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.card{
+background:white;
+width:250px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:200px;
+height:180px;
+object-fit:cover;
+}
+
+button{
+background:black;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#444;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+</style>
+
+<script>
+function buyProduct(product)
+{
+alert(product + " added to cart!");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Noise Smart Store</h1>
+<p>Upgrade Your Sound Experience</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+Feel The Future Of Sound
+</div>
+
+<div class="section" id="products">
+
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46">
+<h3>Noise Air Buds</h3>
+<p>₹1999</p>
+<button onclick="buyProduct('Noise Air Buds')">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+<h3>Noise Buds X</h3>
+<p>₹2499</p>
+<button onclick="buyProduct('Noise Buds X')">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518441902117-6d8d9a4f7b2c">
+<h3>Noise Headphones</h3>
+<p>₹3499</p>
+<button onclick="buyProduct('Noise Headphones')">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b">
+<h3>Noise Smartwatch</h3>
+<p>₹3999</p>
+<button onclick="buyProduct('Noise Smartwatch')">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580894908361-967195033215">
+<h3>Noise Bluetooth Speaker</h3>
+<p>₹2999</p>
+<button onclick="buyProduct('Noise Speaker')">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df">
+<h3>Noise Gaming Headset</h3>
+<p>₹4599</p>
+<button onclick="buyProduct('Noise Gaming Headset')">Buy Now</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="section" id="about">
+<h2>About Noise</h2>
+<p>
+Noise is one of India's leading smart wearable and audio brands.
+We create innovative tech products designed for music lovers,
+gamers, and everyday users who want powerful sound and smart features.
+</p>
+</div>
+
+<div class="section" id="contact">
+<h2>Contact Us</h2>
+<p>Email: support@noise.com</p>
+<p>Phone: +91 9876543210</p>
+</div>
+
+<footer>
+<p>© 2026 Noise Smart Store | Demo Website</p>
+</footer>
+
+</body>
+</html>
